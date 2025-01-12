@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; 
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #294C60;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+
+        .logo {
+            margin-right: auto;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu > a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: normal; 
+            cursor: pointer;
+            padding: 10px 15px;
+            margin: 0 10px;
+        }
+
+        .menu > a:hover {
+            color: orange;
+        }
+
+        .menu > a.active {
+            color: orange;
+        }
+
+        .content {
+            list-style-type: square;
+            background-image: url('Image 7.png'); 
+            background-size: cover; 
+            height: 100%; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; 
+            text-align: center; 
+            padding: 100px; 
+            background-position: center; 
+        }
+
+        .overlay {
+		    color: Orange;
+            padding: 20px; 
+        }
+		
+        .accordion {
+            background-color: #eee; 
+            color: #444; 
+            cursor: pointer; 
+            padding: 10px; 
+            width: 50%; 
+            border: none;
+            text-align: center; 
+            font-size: 16px; 
+            transition: background-color 0.4s;
+            margin: 30px auto; 
+            display: block; 
+        }
+
+       
+        .accordion:hover {
+            background-color: orange; 
+        }
+
+   
+        .panel {
+            width: 70%; 
+            margin: 0 auto; 
+            padding: 5px; 
+            display: none; 
+            background-color: #f8f8f8; 
+            text-align: justify; 
+        }
+		
+        footer {
+            background-color: #294C60; 
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #ffffff; 
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: orange; 
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo 1.jpg" title="ReliaRecords Hub">
+        </div>
+        <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="services.html" class="active">SERVICES</a>
+            <a href="quality.html">QUALITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+    </nav>
+	
+ <div class="content">
+        <div class="overlay">
+            <h1>Services</h1>
+               <a href="index.html" style="text-decoration: none; color: orange;">Home</a> > Services
+            </p>
+        </div>
+    </div>
+	
+
+ <img src="liaising.png" alt="Liaising" style="max-width:300px;height:auto;margin:10px auto;display:block;">
+    <button class="accordion">Liaising with Creating Agencies</button>
+    <div class="panel">
+        <p>We provide collaborate with creating agencies to coordinate the transfer of records. Communication will focus on identifying records eligible for transfer, and our staff will maintain an understanding of the overall quantity of records for each department. They will also manage the removal of records from the center according to disposal schedules.</p>
+    </div>
+
+ 
+ <img src="receiving.png" alt="Receiving" style="max-width:300px;height:auto;margin:10px auto;display:block;">
+    <button class="accordion">Receiving Records from Creating Agencies</button>
+    <div class="panel">
+        <p>Upon receiving records in the Record Centre, staff will ensure they are accompanied by completed transfer lists. Responsibilities include filing and organizing the records according to agreed procedures. Regular file reviews will be conducted by the staffs to certify ongoing organization.</p>
+    </div>
+
+	
+ <img src="retrieving.png" alt="Retrieving" style="max-width:300px;height:auto;margin:10px auto;display:block;">
+    <button class="accordion">Retrieving Records upon Request</button>
+    <div class="panel">
+        <p>In response to requests from creating office staff, our staff will promptly retrieve and provide specific records, following established procedures. The movement of records issued to user departments will be tracked by our staff, who will ensure the timely return of records within the designated timeframe.</p>
+    </div>
+
+   
+ <img src="preparing.png" alt="Preparing" style="max-width:300px;height:auto;margin:10px auto;display:block;">
+    <button class="accordion">Preparing Records for Archive Transfer or Disposal</button>
+    <div class="panel">
+        <p>Our staff will be responsible for identifying and preparing records eligible for transfer to archival institutions or disposal. This involves categorizing records, organizing them appropriately, and ensuring compliance with relevant guidelines and regulations.</p>
+    </div>
+
+
+ <img src="transportation.png" alt="Transportation" style="max-width:300px;height:auto;margin:10px auto;display:block;">
+    <button class="accordion">Transportation for pick up the documents</button>
+    <div class="panel">
+        <p>Documents will be picked up at the creating agency's location by our staff. You don't have to worry about place or time.  This service is facilitated using our transportation, ensuring secure handling of your materials. You won't have to worry about how far places are from one to another by using this service.</p>
+    </div>
+
+
+    <script>
+ 
+        var accordions = document.getElementsByClassName("accordion");
+
+
+        for (let i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener("click", function() {
+             
+                this.classList.toggle("active");
+
+           
+                var panel = this.nextElementSibling;
+
+                
+                if (panel.style.display === "block") {
+                    panel.style.display = "none"; 
+                } else {
+                    panel.style.display = "block"; 
+                }
+            });
+        }
+    </script>
+	
+	  <footer>
+        <div class="footer-section">
+            <h4>Our Records Center</h4>
+            <p>ReliaRecords Hub Sdn. Bhd.</p>
+            <p>06010 Sintok,</p>
+            <p>Kedah, Malaysia</p>
+            <p>Tel: 03-79675490</p>
+            <p>Fax: (603) 7967 5410</p>
+            <p>Email: <a href="https://www.bing.com/ck/a?!&&p=d8fae9194b3ed2b27a8f9509f433155809762dbc70dc3047d21e5f963c5bc6c8JmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=email&u=a1aHR0cHM6Ly9tYWlsLmdvb2dsZS5jb20vbWFpbD9obD1lbg&ntb=1"
+			>info@relia.com.my</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <p><a href="about.html">Overview</a></p>
+            <p><a href="services.html">Services</a></p>
+            <p><a href="quality.html">Quality</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <p><a target=_blank  href="https://www.bing.com/ck/a?!&&p=ee92541d1299a39d67e9b3c5f9ad1628ae48f303c656a5a948a840df1c76cc81JmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1"
+			>Facebook</a></p>
+            <p><a target=_blank  href="https://www.bing.com/ck/a?!&&p=039384eb9f911774af12d14e399efe4fbae240286ba69eb3873ed721e37ed67fJmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20v&ntb=1"
+			>YouTube</a></p>
+            <p><a target=_blank  href="https://www.bing.com/ck/a?!&&p=cf5beb855caf31ba7c14d334dcd66e8a05be0daaf8c5e059a591e0c80c1914abJmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1"
+			>Instagram</a></p>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 ReliaRecords Hub Sdn. Bhd. All Rights Reserved.</p>
+    </div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <style>
+         body {
+            font-family: Arial, sans-serif; 
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #294C60;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+
+        .logo {
+            margin-right: auto;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu > a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: normal; 
+            cursor: pointer;
+            padding: 10px 15px;
+            margin: 0 10px;
+        }
+
+        .menu > a:hover {
+            color: orange;
+        }
+
+        .menu > a.active {
+            color: orange;
+        }
+		
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 30px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .arrow.left {
+            left: 20px;
+        }
+
+        .arrow.right {
+            right: 20px;
+        }
+
+        .contact-button {
+            position: absolute;
+            top: 60%; 
+            left: 46%; 
+            transform: translate(-50%, -50%);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px; 
+            background-color: orange;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            z-index: 10; 
+        }
+		
+        .contact-button:hover {
+            background-color: darkorange; 
+        }
+		
+
+.call-to-action {
+    position: fixed;
+    right: 20px; 
+    top: 100px; 
+    background-color: #294C60; 
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+}
+
+.call-to-action h3 {
+    margin: 0 0 10px 0;
+}
+
+.call-to-action a {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.call-to-action a:hover {
+    background-color: darkorange; 
+}
+
+        h1 {
+            margin-bottom: 30px;
+            font-family: Arial, sans-serif; 
+        }
+        .container {
+            display: flex;
+			flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            width: 40%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .card h3 {
+            font-weight: normal; 
+            margin: 15px 0 10px 0;
+        }
+        .card a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 400; 
+        }
+		
+		   .image-container {
+            position: relative;
+            width: 100%;
+            height: 250px; 
+            margin: auto; 
+            overflow: hidden; 
+        }
+
+        .image-container img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        .text-row {
+            position: absolute;
+            bottom: 10%; 
+            left: 0;
+            right: 0;
+            display: flex;
+			padding: 60px;
+            justify-content: space-around; 
+            color: white; 
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .text-item {
+            font-size: 24px; 
+            font-weight: bold;
+        }
+
+        .text-description {
+            font-size: 14px;
+            font-weight: normal;
+            margin-top: 5px;
+        }
+		
+		
+        footer {
+            background-color: #294C60; 
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #ffffff; 
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: orange; 
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+            width: 100%;
+        }
+		
+
+    </style>
+</head>
+<body>
+ <nav class="navbar">
+        <div class="logo">
+            <img src="logo 1.jpg" title="ReliaRecords Hub">
+        </div>
+        <div class="menu">
+            <a href="index.html" class="active">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="services.html">SERVICES</a>
+            <a href="quality.html">QUALITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+    </nav>
+
+ 
+    <div class="slideshow-container">
+        <div class="slide active" style="background-image: url('Image 1.png');">
+            <a href="contact.html" class="contact-button">CONTACT US</a>
+        </div>
+        <div class="slide" style="background-image: url('Image 2.png');">
+        </div>
+        <button class="arrow left" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
+	
+	<div class="call-to-action">
+    <h3>Have question?</h3>
+    <a href="contact.html">Get in Touch</a>
+</div>
+	
+    <center>
+	<h1>Your Records Center Service Partner</h1>
+	</center>
+
+    <div class="container">
+        <div class="card">
+            <a href="about.html"><img src="Image 3.jpg" alt="Explore more about our records center"></a>
+            <h3>Explore more about our records center</h3>
+			<p style="color: grey";>ReliaRecords Hub helps many clients, including government agencies and private companies in North Malaysia. 
+			Our Commercial Record Centre focuses on safely managing different types of records, from media to office documents. 
+			Our centralized system makes it easy to access, follow rules, and store records efficiently. 
+			By 2030, we want to be the top commercial record company in North Malaysia.
+			</p>
+            <a href="about.html">Read More</a>
+        </div>
+        <div class="card">
+            <a href="services.html"><img src="Image 4.jpg" alt="Explore more about our services"></a>
+            <h3>Explore more about our services</h3>
+			<p style="color: grey";>Unlock the power of efficient record management with ReliaRecords Hub! 
+			Our expert team is ready to streamline your record transfers, ensuring secure and organized storage. 
+			Enjoy quick access to your vital documents and peace of mind knowing that we handle compliance and disposal with care. 
+			Join us and experience the future of record management, where your records are in safe hands!
+            </p>
+			<a href="services.html">Read More</a>
+        </div>
+        <div class="card">
+            <a href="quality.html"><img src="Image 5.png" alt="Caring for records in different formats"></a>
+            <h3>Caring for records in different formats</h3>
+			<p style="color: grey";>At ReliaRecords Hub, we understand that records come in various formats whether digital, physical, or specialized media. 
+			Our dedicated team employs great solutions to ensure each type is stored securely and organized efficiently. 
+			We prioritize the integrity and accessibility of your records. 
+			Experience our commitment to excellence in record care, where every format receives the attention it deserves!
+            </p>
+			<a href="quality.html">Read More</a>
+        </div>
+    </div>
+	<br>
+	<div class="image-container">
+        <img src="Image 6.png">
+        <div class="text-row">
+            <div>
+                <div class="text-item">10+</div>
+                <div class="text-description">Years of Experience</div>
+            </div>
+            <div>
+                <div class="text-item">200+</div>
+                <div class="text-description">Professional Workers</div>
+            </div>
+            <div>
+                <div class="text-item">25+</div>
+                <div class="text-description">Satisfied Customers</div>
+            </div>
+        </div>
+    </div>
+	<br>
+	
+    <footer>
+        <div class="footer-section">
+            <h4>Our Records Center</h4>
+            <p>ReliaRecords Hub Sdn. Bhd.</p>
+            <p>06010 Sintok,</p>
+            <p>Kedah, Malaysia</p>
+            <p>Tel: 03-79675490</p>
+            <p>Fax: (603) 7967 5410</p>
+            <p>Email: <a href="https://www.bing.com/ck/a?!&&p=d8fae9194b3ed2b27a8f9509f433155809762dbc70dc3047d21e5f963c5bc6c8JmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=email&u=a1aHR0cHM6Ly9tYWlsLmdvb2dsZS5jb20vbWFpbD9obD1lbg&ntb=1"
+			>info@relia.com.my</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <p><a href="about.html">Overview</a></p>
+            <p><a href="services.html">Services</a></p>
+            <p><a href="quality.html">Quality</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <p><a target=_blank  href="https://www.bing.com/ck/a?!&&p=ee92541d1299a39d67e9b3c5f9ad1628ae48f303c656a5a948a840df1c76cc81JmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1"
+			>Facebook</a></p>
+            <p><a target=_blank href="https://www.bing.com/ck/a?!&&p=039384eb9f911774af12d14e399efe4fbae240286ba69eb3873ed721e37ed67fJmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20v&ntb=1"
+			>YouTube</a></p>
+            <p><a target=_blank href="https://www.bing.com/ck/a?!&&p=cf5beb855caf31ba7c14d334dcd66e8a05be0daaf8c5e059a591e0c80c1914abJmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1"
+			>Instagram</a></p>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 ReliaRecords Hub Sdn. Bhd. All Rights Reserved.</p>
+    </div>
+	
+</body>
+</html>

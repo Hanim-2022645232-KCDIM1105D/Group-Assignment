@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; 
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #294C60;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky; 
+            top: 0;
+            z-index: 1000; 
+        }
+
+        .logo {
+            margin-right: auto;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu > a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: normal;
+            cursor: pointer;
+            padding: 10px 15px;
+            margin: 0 10px;
+        }
+
+        .menu > a:hover {
+            color: orange;
+        }
+
+        .menu > a.active {
+            color: orange;
+        }
+
+        .content {
+            background-image: url('Image 7.png');
+            background-size: cover; 
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center; 
+            padding: 100px; 
+            background-position: center; 
+        }
+
+        .overlay {
+		    color: Orange;
+            padding: 20px;
+        }
+		
+        .accordion {
+            background-color: #eee; 
+            color: #444; 
+            cursor: pointer;
+            padding: 10px; 
+            width: 50%; 
+            border: none; 
+            text-align: left; 
+            font-size: 16px; 
+            transition: background-color 0.4s; 
+            margin: 30px auto; 
+            display: block; 
+        }
+
+        .accordion:hover {
+            background-color: orange; 
+        }
+
+
+        .panel {
+            width: 70%; 
+            margin: 0 auto; 
+            padding: px; 
+            display: none; 
+            background-color: #f8f8f8; 
+            text-align: center; 
+        }
+
+        footer {
+            background-color: #294C60; 
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #ffffff; 
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: orange; 
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+            width: 100%;
+        }
+		
+		.flip-box {
+			background-color: transparent;
+			width: 200px;
+			height: 180px;
+			border: 1px solid #f1f1f1;
+			perspective: 1000px;
+		}
+		
+		.flip-box-inner {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			transition: transform 0.8s;
+			transform-style: preserve-3d;
+		}
+		
+		.flip-box:hover .flip-box-inner {
+			transform: rotateY(180deg);
+		}
+
+		.flip-box-front, .flip-box-back {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+
+		.flip-box-front {
+			background-color: #bbb;
+			color: black;
+		}
+
+		.flip-box-back {
+			background-color: #294C60;
+			color: white;
+			transform: rotateY(180deg);
+		}
+
+		.text-format{
+			width: 70%;
+			margin: 30px auto;
+			text-align: justify;
+			line-height: 1.5;
+		}
+		
+		.picture-format {
+			margin: 5px 100px;
+		}
+		
+		.image-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.image-container img {
+			width: 200px;
+			height: 180px;
+		}
+		
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo 1.jpg" title="ReliaRecords Hub">
+        </div>
+        <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="services.html">SERVICES</a>
+            <a href="quality.html" class="active">QUALITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+    </nav>
+	
+ <div class="content">
+        <div class="overlay">
+            <h1>Quality</h1>
+               <a href="index.html" style="text-decoration: none; color: orange;">Home</a> > Quality
+            </p>
+        </div>
+    </div>
+	
+
+    <button class="accordion">Fire Control</button>
+    <div class="panel">
+        <div class="text-format">
+			<p> To protect your records from fire damage, we have implemented a comprehensive fire safety strategy that includes a reliable fire alarm system and strategically placed fire extinguishers.</p>
+		<ul style="list-style-type:square;">
+			<li>Our fire alarm system is intended to detect the first signs of a fire, such as smoke or extreme heat.</li>
+			<li>It is equipped with modern sensors and detectors strategically placed throughout the record centre to ensure full coverage.</li>
+		</ul>
+		</div>
+
+		<div class="picture-format">
+        <div class="image-container">
+			<div class="flip-box">
+			<div class="flip-box-inner">
+			<div class="flip-box-front">
+				<img src="firecontrolsystem.png">
+			</div>
+			<div class="flip-box-back">
+				<p>Fire Control System</p>
+			</div>
+			</div>
+			</div>
+			<div class="flip-box">
+			<div class="flip-box-inner">
+			<div class="flip-box-front">
+				<img src="smokedetector.png">
+			</div>
+			<div class="flip-box-back">
+				<p>Smoke Detector</p>
+			</div>
+			</div>
+			</div>
+			<div class="flip-box">
+			<div class="flip-box-inner">
+			<div class="flip-box-front">
+				<img src="fireextinguisher.png">
+			</div>
+			<div class="flip-box-back">
+				<p>Fire Extinguisher</p>
+			</div>
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+    <button class="accordion">Temperature</button>
+    <div class="panel">
+        <div class="text-format">
+			<p> Temperature and humidity are both inversely proportional. If the temperature increases, the air will become drier and the humidity will decrease. Inappropriate levels of either temperature or humidity will affect the material condition.</p>
+		<ul style="list-style-type:square;">
+			<li>Paper documents are stored at 2–18 °C and 30–50% relative humidity.</li>
+			<li>Electronic records are stored at 11°C and 30% relative humidity.</li>
+		</ul>
+		</div>
+		
+		<div class="picture-format">
+        <div class="image-container">
+			<div class="flip-box">
+			<div class="flip-box-inner">
+			<div class="flip-box-front">
+				<img src="meter.png">
+			</div>
+			<div class="flip-box-back">
+				<p>Temperature and Humidity Meter</p>
+			</div>
+		</div>
+		</div>
+			<div class="flip-box">
+			<div class="flip-box-inner">
+			<div class="flip-box-front">
+				<img src="airconditioner.png">
+			</div>
+			<div class="flip-box-back">
+				<p>Air Conditioning Dehumidifier</p>
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+		
+
+    <button class="accordion">Lighting</button>
+    <div class="panel">
+		<div class="text-format">
+			<p>Light is one of the most common causes of damage to records. Materials like paper and photographs can all be harmed by sunlight and constant interior lighting. It will lead to color fading or darkening. We will protect them by boxing them, sleeving them, or covering them when not in use.</p>
+		</div>
+		
+		<div class="picture-format">
+        <div class="image-container">
+			<div class="flip-box">
+			<div class="flip-box-inner">
+			<div class="flip-box-front">
+				<img src="boxing.jpg">
+			</div>
+			<div class="flip-box-back">
+				<p>Boxing Documents</p>
+			</div>
+		</div>
+		</div>
+			<div class="flip-box">
+			<div class="flip-box-inner">
+			<div class="flip-box-front">
+				<img src="sleeve.png">
+			</div>
+			<div class="flip-box-back">
+				<p>Document's Sleeves</p>
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+    </div>
+
+    <button class="accordion">Theft</button>
+    <div class="panel">
+		<div class="text-format">
+			<p>We prioritize superior security for our record center to maintain its integrity. In order to achieve customer's trust in our record center, the following features are implemented in our record center.</p>
+		<ul style="list-style-type:square;">
+			<li>Physical semi-current records stored in the storage area can be monitored by security cameras.</li>
+			<li>The electronic records are protected by the latest antivirus software.</li>
+		</ul>
+		</div>
+		
+		<div class="picture-format">
+        <div class="image-container">
+			<div class="flip-box">
+			<div class="flip-box-inner">
+			<div class="flip-box-front">
+				<img src="camera.png">
+			</div>
+			<div class="flip-box-back">
+				<p>Security Cameras</p>
+			</div>
+		</div>
+		</div>
+			<div class="flip-box">
+			<div class="flip-box-inner">
+			<div class="flip-box-front">
+				<img src="antivirus.jpg">
+			</div>
+			<div class="flip-box-back">
+				<p>Antivirus Software</p>
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+    </div>
+	<br>
+
+    <script>
+
+        var accordions = document.getElementsByClassName("accordion");
+
+
+        for (let i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener("click", function() {
+
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+
+
+                if (panel.style.display === "block") {
+                    panel.style.display = "none"; 
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+	
+	  <footer>
+        <div class="footer-section">
+            <h4>Our Records Center</h4>
+            <p>ReliaRecords Hub Sdn. Bhd.</p>
+            <p>06010 Sintok,</p>
+            <p>Kedah, Malaysia</p>
+            <p>Tel: 03-79675490</p>
+            <p>Fax: (603) 7967 5410</p>
+            <p>Email: <a href="https://www.bing.com/ck/a?!&&p=d8fae9194b3ed2b27a8f9509f433155809762dbc70dc3047d21e5f963c5bc6c8JmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=email&u=a1aHR0cHM6Ly9tYWlsLmdvb2dsZS5jb20vbWFpbD9obD1lbg&ntb=1"
+			>info@relia.com.my</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <p><a href="about.html">Overview</a></p>
+            <p><a href="services.html">Services</a></p>
+            <p><a href="quality.html">Quality</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <p><a target=_blank  href="https://www.bing.com/ck/a?!&&p=ee92541d1299a39d67e9b3c5f9ad1628ae48f303c656a5a948a840df1c76cc81JmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1"
+			>Facebook</a></p>
+            <p><a target=_blank  href="https://www.bing.com/ck/a?!&&p=039384eb9f911774af12d14e399efe4fbae240286ba69eb3873ed721e37ed67fJmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20v&ntb=1"
+			>YouTube</a></p>
+            <p><a target=_blank href="https://www.bing.com/ck/a?!&&p=cf5beb855caf31ba7c14d334dcd66e8a05be0daaf8c5e059a591e0c80c1914abJmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1"
+			>Instagram</a></p>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 ReliaRecords Hub Sdn. Bhd. All Rights Reserved.</p>
+    </div>
+	
+	
+</body>
+</html>

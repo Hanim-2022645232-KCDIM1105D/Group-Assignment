@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; 
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #294C60;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky; 
+            top: 0;
+            z-index: 1000; 
+        }
+
+        .logo {
+            margin-right: auto;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu > a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: normal; 
+            cursor: pointer;
+            padding: 10px 15px;
+            margin: 0 10px;
+        }
+
+        .menu > a:hover {
+            color: orange;
+        }
+
+        .menu > a.active {
+            color: orange;
+        }
+ 	
+        .content {
+            background-image: url('Image 7.png'); 
+            background-size: cover;
+            height: 100%; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center; 
+            padding: 100px; 
+            background-position: center;
+	 }
+
+        .overlay {
+            color: Orange;
+            padding: 20px; 
+        }
+    
+        .accordion {
+            background-color: #eee; 
+            color: #444; 
+            cursor: pointer; 
+            padding: 10px; 
+            width: 50%; 
+            border: none; 
+            text-align: left; 
+            font-size: 16px; 
+            transition: background-color 0.4s; 
+            margin: 30px auto; 
+            display: block;         
+	}
+
+        
+        .accordion:hover {
+            background-color: orange; 
+        }
+
+        .panel {
+            width: 70%; 
+            margin: 0 auto; 
+            padding: px; 
+            display: none; 
+            background-color: #f8f8f8; 
+            text-align: center; 
+        }
+  
+  	.panel p {
+           text-align: justify; 
+           line-height: 1.5; 
+           margin: 0; 
+ 	}
+
+  	.logo-heading {
+           text-align: justify; 
+           line-height: 1.5;
+         }
+
+ 	.logo-description {
+           text-align: justify; 
+           padding: 0; 
+           margin: 0;
+           line-height: 1.5; 
+ 	 }
+
+  	.logo-description li {
+           margin-bottom: 10px; 
+  	 }
+
+  	.left-align {
+           text-align: left; 
+  	 }
+
+  	.objectives {
+           text-align: justify; 
+           line-height: 1.5; 
+           padding: 0; 
+           margin: 0; 
+ 	 }
+
+	.objectives li {
+           margin-bottom: 10px; 
+ 	 }
+
+  	.area-description {
+  	   line-height: 1.5; 
+           text-align: justify; 
+           margin-bottom: 30px;
+  	 }
+
+        footer {
+            background-color: #294C60; 
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #ffffff; 
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: orange; 
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo 1.jpg" title="ReliaRecords Hub">
+        </div>
+        <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html" class="active">ABOUT US</a>
+            <a href="services.html">SERVICES</a>
+            <a href="quality.html">QUALITY</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+    </nav>
+  
+ <div class="content">
+        <div class="overlay">
+            <h1>About Us</h1>
+               <a href="index.html" style="text-decoration: none; color: orange;">Home</a> > About Us
+            </p>
+        </div>
+    </div>
+  
+    <button class="accordion">Overview</button>
+    <div class="panel">
+    <img src="Image 3.jpg"style="max-width: 50%; height: auto; margin-bottom: 20px;">
+
+        <p>ReliaRecords Hub provides services to a wide range of clients, including government institutions as well as private agencies and companies throughout North Malaysia. Our Commercial Record Centre specializes in providing specific services to organizations looking to manage their various kinds of records, from specialized media to administrative documents, in a secure and effective manner. Our centralized approach ensures streamlined access, compliance, and efficient storage solutions. By 2030, we were committed to developing ReliaRecords Hub as the most reputable commercial record company in North Malaysia.</p>
+    </div>
+    
+    <button class="accordion">Logo</button>
+    <div class="panel">
+        <img src="logo 1.jpg" style="max-width: 50%; height: auto; margin-bottom: 20px;">
+    <h2 class="logo-heading">Logo Description</h2>
+    <ol class="logo-description">
+
+        <li><strong>Design:</strong> The design is simple and minimalistic, with the letters being the main focus of the logo.</li>
+        <li><strong>"R" and "R" letters:</strong> The "R" and "R" letters in the logo are arranged in stylized manner and also can be described as representing the initials of
+"ReliaRecords," which is the name of our commercial record center.</li>
+        <li><strong>The line:</strong> The line between the "R" and "R" letters can be described as representing a record, symbolizing the focus on records and data management
+in our commercial record center.The design is simple and minimalistic, with the letters being the main focus of the logo.</li>
+        <li><strong>Color:</strong> The blue color in the logo can represent trust, reliability,and professionalism, while the white color can symbolize purity, integrity, and
+organization.</li>
+    </ol>
+</div>
+ 
+    <button class="accordion">Vision, Mission and Objectives</button>
+    <div class="panel">
+    <h2 class="left-align">Vision</h2>
+        <p>To be the most trusted commercial record center in North Malaysia by 2030.</p>
+    
+    <h2 class="left-align">Mission</h2>
+        <p>We are dedicated to delivering comprehensive and cost-effective records solutions for our valued customers. Our experienced and well-trained staff ensures exceptional service, striving to establish ourselves as the foremost trusted commercial record center in North Malaysia by 2030.</p>
+
+    <h2 class="left-align">Objectives</h2>
+    <ol class="objectives">
+        <li>We Improve customer satisfaction through enhanced record services.</li>
+        <li>We Strengthen data security measures for customer records.</li>
+        <li>Drive technological innovation for better record management.</li>
+    </ol>
+</div>
+       
+    <button class="accordion">Area Covers</button>
+    <div class="panel">
+         <img src="Image 9.png" style="max-width: 50%; height: auto;">
+    <h2 class="left-align">Area Covers</h2>
+    <p class="area-description">At ReliaRecords Hub, we proudly serve clients across <strong>North Malaysia</strong>, providing comprehensive records management solutions. Our records center is strategically located to accommodate various clients, including government offices and private organizations throughout the region. Clients from states such as <strong>Perak, Kedah, Penang, and Perlis </strong> can conveniently visit our records center for their document management needs. Additionally, we offer a collection service where our team can come to your location to pick up documents. This service is facilitated using our transportation, ensuring secure handling of your materials. Please note that a nominal delivery charge applies for this service. We are committed to making records management accessible and efficient for all our clients in North Malaysia.</p>   
+</div>
+
+    <script>
+        var accordions = document.getElementsByClassName("accordion");
+
+        for (let i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener("click", function() {
+
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+
+                if (panel.style.display === "block") {
+                    panel.style.display = "none"; 
+                } else {
+                    panel.style.display = "block"; 
+                }
+            });
+        }
+    </script>
+<br>
+    <footer>
+        <div class="footer-section">
+            <h4>Our Records Center</h4>
+            <p>ReliaRecords Hub Sdn. Bhd.</p>
+            <p>06010 Sintok,</p>
+            <p>Kedah, Malaysia</p>
+            <p>Tel: 03-79675490</p>
+            <p>Fax: (603) 7967 5410</p>
+            <p>Email: <a href="https://www.bing.com/ck/a?!&&p=d8fae9194b3ed2b27a8f9509f433155809762dbc70dc3047d21e5f963c5bc6c8JmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=email&u=a1aHR0cHM6Ly9tYWlsLmdvb2dsZS5jb20vbWFpbD9obD1lbg&ntb=1"
+			>info@relia.com.my</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <p><a href="about.html">Overview</a></p>
+            <p><a href="services.html">Services</a></p>
+            <p><a href="quality.html">Quality</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <p><a target=_blank href="https://www.bing.com/ck/a?!&&p=ee92541d1299a39d67e9b3c5f9ad1628ae48f303c656a5a948a840df1c76cc81JmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1"
+			>Facebook</a></p>
+            <p><a target=_blank href="https://www.bing.com/ck/a?!&&p=039384eb9f911774af12d14e399efe4fbae240286ba69eb3873ed721e37ed67fJmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20v&ntb=1"
+			>YouTube</a></p>
+            <p><a target=_blank href="https://www.bing.com/ck/a?!&&p=cf5beb855caf31ba7c14d334dcd66e8a05be0daaf8c5e059a591e0c80c1914abJmltdHM9MTczNjY0MDAwMA&ptn=3&ver=2&hsh=4&fclid=339212ca-9902-6188-1d55-027d989560f2&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1"
+			>Instagram</a></p>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 ReliaRecords Hub Sdn. Bhd. All Rights Reserved.</p>
+    </div>
+	
+ 
+</body>
+</html>
